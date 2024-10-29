@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Perfil de Usuario</h1>
+    <nav>
+        <input type="text" placeholder="Buscar...">
+        <a href="inicio-sesion.html">Iniciar sesión</a>
+        <div class="dropdown">
+            <a href="#">Secciones</a>
+            <div class="dropdown-content">
+                <a href="#">Ropa</a>
+                <a href="#">Tecnología</a>
+                <a href="#">Hogar</a>
+                <a href="#">Deportes</a>
+            </div>
+        </div>
+        <a href="#">Registrarse</a>
+    </nav>
+</header>
+
+<main>
+    <section class="perfil-usuario">
+        <h2>¡Bienvenido!</h2>
+        <div class="foto-perfil">
+            <img src="usuario.jpg" alt="Foto de perfil" id="foto-usuario">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="subir-foto">Subir nueva foto de perfil:</label>
+                <input type="file" id="subir-foto" name="subir-foto" accept="image/*">
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="compras-realizadas">
+        <h3>Compras Realizadas</h3>
+        <ul>
+            <li>Producto 1 - Fecha: 01/10/2023</li>
+            <li>Producto 2 - Fecha: 15/09/2023</li>
+            <li>Producto 3 - Fecha: 05/08/2023</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>Desarrollado por Grupo 5 GC</p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> X</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+</footer>
+
+</body>
+</html>

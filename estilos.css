@@ -1,0 +1,140 @@
+/* estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+header input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+main img {
+    width: 24%;
+    border-radius: 10px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
+footer .social-icons {
+    margin-top: 10px;
+}
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer .social-icons a:hover {
+    color: #f0f0f0;
+}
+/* Ajustar tamaño de los íconos en el footer */
+footer .social-icons svg {
+    width: 24px;  /* Ajusta el valor según el tamaño que prefieras */
+    height: 24px; /* Mantén las proporciones iguales */
+    fill: #fff;   /* Asegura que los íconos tengan el color correcto */
+}
+
+footer .social-icons a:hover svg {
+    fill: #f0f0f0; /* Cambia el color al pasar el mouse, si lo deseas */
+}
+
+
+
+
+
+/* estilos para la sección de iniciar sesion */
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); /* Ajustar la altura del body para ocupar el espacio disponible */
+}
+.login-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+}
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-container button:hover {
+    background-color: #555;
+}
+
