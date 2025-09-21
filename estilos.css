@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: lightgrey;
+
 }
 header {
     background-color: #333;
@@ -56,15 +58,7 @@ header input[type="text"] {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-main {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-main img {
-    width: 24%;
-    border-radius: 10px;
-}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -103,29 +97,46 @@ footer .social-icons a:hover svg {
 main {
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: calc(100vh - 200px); /* Ajustar la altura del body para ocupar el espacio disponible */
+
 }
-.login-container {
+
+main img:hover {
+    transform: scale(1.08); /* Agranda la imagen un 8% */
+    transition: transform 0.3s ease; /* Animación suave */
+}
+
+main img {
+    width: 24%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.login-container,
+.register-container {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 320px;
     text-align: center;
 }
-.login-container h2 {
+.login-container h2,
+.register-container h2 {
     margin-bottom: 20px;
 }
-.login-container input {
+.login-container input,
+.register-container input {
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 3px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.login-container button {
+.login-container button,
+.register-container button {
     width: 100%;
     padding: 10px;
     background-color: #333;
@@ -134,7 +145,8 @@ main {
     border-radius: 5px;
     cursor: pointer;
 }
-.login-container button:hover {
+.login-container button:hover,
+.register-container button:hover {
     background-color: #555;
 }
 
