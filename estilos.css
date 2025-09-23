@@ -59,39 +59,6 @@ header input[type="text"] {
     display: block;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
-}
-footer .social-icons {
-    margin-top: 10px;
-}
-footer .social-icons a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 20px;
-}
-footer .social-icons a:hover {
-    color: #f0f0f0;
-}
-/* Ajustar tamaño de los íconos en el footer */
-footer .social-icons svg {
-    width: 24px;  /* Ajusta el valor según el tamaño que prefieras */
-    height: 24px; /* Mantén las proporciones iguales */
-    fill: #fff;   /* Asegura que los íconos tengan el color correcto */
-}
-
-footer .social-icons a:hover svg {
-    fill: #f0f0f0; /* Cambia el color al pasar el mouse, si lo deseas */
-}
-
-
-
-
-
 /* estilos para la sección de iniciar sesion */
 
 main {
@@ -109,9 +76,13 @@ main img:hover {
 }
 
 main img {
-    width: 24%;
+    width: 22%;
     border-radius: 10px;
     transition: transform 0.3s ease;
+}
+
+main div img {
+    width: 100%;
 }
 
 .login-container,
@@ -150,3 +121,103 @@ main img {
     background-color: #555;
 }
 
+/* From Uiverse.io by gharsh11032000 */ 
+.cards-container {
+  display: flex;
+  gap: 20px;               /* separación horizontal entre las cards */
+  justify-content: center; /* centra el conjunto */
+  flex-wrap: wrap;         /* permite que bajen de línea en pantallas chicas */
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  width: 30%;
+  height: 350px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 10px;
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
+footer .social-icons {
+    margin-top: 10px;
+}
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer .social-icons a:hover {
+    color: #f0f0f0;
+}
+/* Ajustar tamaño de los íconos en el footer */
+footer .social-icons svg {
+    width: 24px;  /* Ajusta el valor según el tamaño que prefieras */
+    height: 24px; /* Mantén las proporciones iguales */
+    fill: #fff;   /* Asegura que los íconos tengan el color correcto */
+}
+
+footer .social-icons a:hover svg {
+    fill: #f0f0f0; /* Cambia el color al pasar el mouse, si lo deseas */
+}
