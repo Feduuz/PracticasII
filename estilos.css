@@ -124,9 +124,9 @@ main div img {
 /* From Uiverse.io by gharsh11032000 */ 
 .cards-container {
   display: flex;
-  gap: 20px;               /* separación horizontal entre las cards */
-  justify-content: center; /* centra el conjunto */
-  flex-wrap: wrap;         /* permite que bajen de línea en pantallas chicas */
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 20px;
 }
 
