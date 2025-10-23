@@ -12,7 +12,10 @@
     <a href="index.html" style="color: inherit; text-decoration: none;"><h1>Mi E-commerce</h1></a>
 
     <nav>
-        <input type="text" placeholder="Buscar...">
+        <form action="buscar.php" method="get">
+            <input type="text" name="q" placeholder="Buscar..." required>
+            <button type="submit">Buscar</button>
+        </form>
         <a href="inicio-sesion.html">Iniciar sesión</a>
         <div class="dropdown">
             <a href="#">Secciones</a>
